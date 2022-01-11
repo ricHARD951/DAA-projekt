@@ -37,3 +37,14 @@ CREATE TABLE `transakcie` (
   `prijimatel_id` int,
   `suma` int
 );
+
+
+ALTER TABLE `pozicka` ADD FOREIGN KEY (`id`) REFERENCES `uzivatel` (`pozicka_id`);
+
+ALTER TABLE `kreditna_karta` ADD FOREIGN KEY (`id`) REFERENCES `uzivatel` (`kreditna_karta_id`);
+
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`id`) REFERENCES `transakcie` (`odosielatel_id`);
+
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`banka_id`) REFERENCES `Banka` (`id`);
+
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`transakcie_id`) REFERENCES `transakcie` (`id`);

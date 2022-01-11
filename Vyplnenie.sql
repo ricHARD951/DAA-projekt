@@ -10,7 +10,7 @@ VALUES    ('Maroš', 'Guma', 'Čadca', '1985-2-18', 'marosguma123@gmail.com', '0
 ('Imre', 'Dusík', 'Žilina', '1979-04-17', 'imredusik@gmail.com', '090145631', '5', '3', '8', '5'  ),
 ('Gejza', 'Kyslík', 'Košice', '1997-05-27', 'gejzakyslik@gmail.com', '090523262', '4', '5', '5', '4'  ),
 ('Jolana', 'Kyslá', 'Žilina', '1997-09-17', 'jolanakysla@gmail.com','090543162', '3', '1', '1', '8'  );
-https://prnt.sc/26ckf1o
+
 
 INSERT INTO kreditna_karta (cislo_karty, datum_expiracie, limit_karty)
 
@@ -25,7 +25,7 @@ VALUES
 ('901867933','2022-06-20','03173'),
 ('574353879','2022-11-17','26609'),
 ('584468788','2022-12-26','81318');
-https://prnt.sc/26ckffs
+
 
 INSERT INTO pozicka (stav_pozicky, mnozstvo, datum_splatnosti )
 
@@ -39,7 +39,7 @@ VALUES ('Zobraná', '10000', '2022-04-13'),
 ('Zobraná', '10000', '2022-04-16'),
 ('Zobraná', '110000', '2022-06-03'),
 ('Zobraná', '1000', '2023-06-03');
-https://prnt.sc/26ckfam
+
 
 
 INSERT	INTO banka (nazov_banky)
@@ -51,7 +51,7 @@ VALUES
 ('Prvá stavebná sporitelňa'),
 ('Tatra banka'),
 ('VÚB banka');
-https://prnt.sc/26ckfkv
+
 
 INSERT INTO transakcie (odosielatel_id, prijimatel_id, suma)
 
@@ -66,4 +66,9 @@ VALUES
 ('10', '2', '150'),
 ('3', '9', '25'),
 ('6', '10', '750');
-https://prnt.sc/26ckf5t
+
+https://prnt.sc/26ckfkv - banka
+https://prnt.sc/26ckf5t - transakcie
+https://prnt.sc/26ckf1o - uzivatel
+https://prnt.sc/26ckfam - pozicka
+https://prnt.sc/26ckffs - karta

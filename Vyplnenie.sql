@@ -1,6 +1,7 @@
 INSERT INTO uzivatel (meno, priezvisko, bydlisko, datum_narodenia, email, telefon, kreditna_karta_id, banka_id, pozicka_id, transakcie_id )
 
-VALUES    ('Maroš', 'Guma', 'Čadca', '1985-2-18', 'marosguma123@gmail.com', '090545151', '1', '2', '8', '1' ),
+VALUES    
+('Maroš', 'Guma', 'Čadca', '1985-2-18', 'marosguma123@gmail.com', '090545151', '1', '2', '8', '1' ),
 ('Peter', 'Velky', 'Námestovo', '1999-3-24', 'petervelky@gmail.com', '090461215', '2', '3', '2', '2'  ),
 ('Jana', 'Mokrá', 'Krasno nad Kysucou', '2003-06-19', 'jasomjanka58@gmail.com', '090345401', '10', '4', '7', '9'  ),
 ('Petra', 'Velka', 'Kysucké Nové Mesto', '1995-11-01', 'petravelka@gmail.com', '090445441', '9', '4', '4', '7'  ),
@@ -29,7 +30,8 @@ VALUES
 
 INSERT INTO pozicka (stav_pozicky, mnozstvo, datum_splatnosti )
 
-VALUES ('Zobraná', '10000', '2022-04-13'),
+VALUES 
+('Zobraná', '10000', '2022-04-13'),
 ('Zobraná', '20000', '2022-08-08'),
 ('Zobraná', '30000', '2022-10-24'),
 ('Zobraná', '15000', '2022-02-15'),

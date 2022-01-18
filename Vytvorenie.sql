@@ -1,5 +1,5 @@
 CREATE TABLE `uzivatel` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `uzivatel_id` int PRIMARY KEY AUTO_INCREMENT,
   `meno` varchar(255),
   `priezvisko` varchar(255),
   `bydlisko` varchar(255),
@@ -13,38 +13,36 @@ CREATE TABLE `uzivatel` (
 );
 
 CREATE TABLE `pozicka` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `pozicka_id` int PRIMARY KEY AUTO_INCREMENT,
   `stav_pozicky` varchar(255),
   `mnozstvo` int,
   `datum_splatnosti` date
 );
 
 CREATE TABLE `Banka` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `banka_id` int PRIMARY KEY AUTO_INCREMENT,
   `nazov_banky` varchar(255)
 );
 
 CREATE TABLE `kreditna_karta` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `kreditna_karta_id` int PRIMARY KEY AUTO_INCREMENT,
   `cislo_karty` int,
   `datum_expiracie` date,
   `limit_karty` int
 );
 
 CREATE TABLE `transakcie` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `transakcie_id` int PRIMARY KEY AUTO_INCREMENT,
   `odosielatel_id` int,
   `prijimatel_id` int,
   `suma` int
 );
 
 
-ALTER TABLE `pozicka` ADD FOREIGN KEY (`id`) REFERENCES `uzivatel` (`pozicka_id`);
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`transakcie_id`) REFERENCES `transakcie` (`transakcie_id`);
 
-ALTER TABLE `kreditna_karta` ADD FOREIGN KEY (`id`) REFERENCES `uzivatel` (`kreditna_karta_id`);
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`banka_id`) REFERENCES `Banka` (`banka_id`);
 
-ALTER TABLE `uzivatel` ADD FOREIGN KEY (`id`) REFERENCES `transakcie` (`odosielatel_id`);
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`kreditna_karta_id`) REFERENCES `kreditna_karta` (`kreditna_karta_id`);
 
-ALTER TABLE `uzivatel` ADD FOREIGN KEY (`banka_id`) REFERENCES `Banka` (`id`);
-
-ALTER TABLE `uzivatel` ADD FOREIGN KEY (`transakcie_id`) REFERENCES `transakcie` (`id`);
+ALTER TABLE `uzivatel` ADD FOREIGN KEY (`pozicka_id`) REFERENCES `pozicka` (`pozicka_id`);

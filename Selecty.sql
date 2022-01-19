@@ -14,7 +14,7 @@ SELECT * FROM uzivatel WHERE transakcie_id BETWEEN 5 AND 7 ORDER BY uzivatel_id
 #2.1 Vyberie uživatelov ktorí bývajú v Čadci alebo Žiline a majú id transakcie 8
 SELECT * FROM uzivatel WHERE bydlisko LIKE "Čadca" OR bydlisko Like "Žilina" AND transakcie_id LIKE 8
 #2.2
-SELECT
+SELECT* FROM uzivatel WHERE NOT transakcie_id 10
 #2.3
 SELECT
 

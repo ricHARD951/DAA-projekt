@@ -7,7 +7,7 @@ SELECT MAX(suma) AS"maximalna odosielna suma" FROM transakcie
 #1.3 Select vypíše id uživatlela, dátum narodenia a zoradí ich vzostupne
 SELECT id, datum_narodenia FROM uzivatel ORDER	BY	datum_narodenia ASC
 
-#1.4
+#1.4 Vyberie uživatelov ktorí majú id transakcie medzi 5 s 7 a zoradí ich podľa id
 SELECT * FROM uzivatel WHERE transakcie_id BETWEEN 5 AND 7 ORDER BY uzivatel_id
 
 

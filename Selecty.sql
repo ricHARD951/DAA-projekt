@@ -8,7 +8,7 @@ SELECT MAX(suma) AS"maximalna odosielna suma" FROM transakcie
 SELECT id, datum_narodenia FROM uzivatel ORDER	BY	datum_narodenia ASC
 
 #1.4
-SELECT 
+SELECT * FROM uzivatel WHERE transakcie_id BETWEEN 5 AND 7 ORDER BY uzivatel_id
 
 
 #2.1 Vyberie uživatelov ktorí bývajú v Čadci alebo Žiline a majú id transakcie 8

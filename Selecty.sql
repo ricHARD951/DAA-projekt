@@ -11,8 +11,8 @@ SELECT id, datum_narodenia FROM uzivatel ORDER	BY	datum_narodenia ASC
 SELECT 
 
 
-#2.1
-SELECT 
+#2.1 Vyberie uživatelov ktorí bývajú v Čadci alebo Žiline a majú id transakcie 8
+SELECT * FROM uzivatel WHERE bydlisko LIKE "Čadca" OR bydlisko Like "Žilina" AND transakcie_id LIKE 8
 #2.2
 SELECT
 #2.3
